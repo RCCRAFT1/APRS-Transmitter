@@ -45,11 +45,15 @@ RX/TX filter=false
 init connection server @R5YI/6
 connect to RSserverforISS
 communicate w/ 145.825MHz
-say("Hello, this is X6AB/2, authorizing a commuinication")
+say("Your Message Here")
 morse("ditdahdit")
 morse("ditditdahdahditdah") rate=50WPM
+postposition("wherever you are")
+path1("")
+path2("")
+dstcall("aprs.fi")
 DASDOS("?") sendsignal=true
 DASDOS((encode:=false for employ=emplode))
-DASDOS((overload RSserverforISS)) packets=100000000000000000000000000000000000000000000000000000000
-DASDOS((blowup=false))
+DASDOS((overload RSserverforISS=false)) packets=10
+
 
